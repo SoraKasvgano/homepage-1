@@ -56,7 +56,7 @@ App = {
         document.addEventListener('mousemove', onDocumentMouseMove, false);
         window.addEventListener('resize', onWindowResize, false)
         var email = document.getElementById("Email");
-        email.href = window.atob("aHR0cDovL21haWwucXEuY29tL2NnaS1iaW4vcW1fc2hhcmU/dD1xbV9tYWlsbWUmZW1haWw9LTVHUWpacVBrNGJPdjUyWm5aNlIwWnlRa2c=");
+        email.href = window.atob("aHR0cHM6Ly9tYWlsLnFxLmNvbS9jZ2ktYmluL3FtX3NoYXJlP3Q9cW1fbWFpbG1lJmVtYWlsPS01R1FqWnFQazRiT3Y1MlpuWjZSMFp5UWtn");
     },
 }
 if (!Detector.webgl) Detector.addGetWebGLMessage();

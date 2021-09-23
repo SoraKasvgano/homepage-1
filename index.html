@@ -38,7 +38,7 @@
     </ul>
    </nav>
   </div>
-  <p class="copyright">&copy; 2018 - <span id="my-date"></span>&nbsp;www.itjoker.cn</p>
+  <p class="copyright">&copy; 2018 - <span id="my-date"><script>var date=new Date;nowYear=date.getFullYear().toString(),document.write(nowYear);</script></span>&nbsp;www.itjoker.cn</p>
   <script type="text/javascript" src="./assets/ThreeWebGL.min.js"></script>
   <script type="text/javascript" src="./assets/ThreeExtras.min.js"></script>
   <script type="text/javascript" src="./assets/Detector.min.js"></script>
@@ -48,8 +48,8 @@
   <script id="fs" type="x-shader/x-fragment">uniform sampler2D map; uniform vec3 fogColor; uniform float fogNear; uniform float fogFar; varying vec2 vUv; void main() { float depth = gl_FragCoord.z / gl_FragCoord.w; float fogFactor = smoothstep(fogNear, fogFar, depth); gl_FragColor = texture2D(map,
     vUv); gl_FragColor.w *= pow(gl_FragCoord.z, 20.0); gl_FragColor = mix(gl_FragColor, vec4(fogColor, gl_FragColor.w), fogFactor); }</script>
   <script src="./assets/main.min.js"></script>
+
   <script>
-    var date=new Date;nowYear=date.getFullYear().toString(),document.write(nowYear);
     var typed=new Typed("#description",{strings:[document.getElementById("description").innerHTML],startDelay:100,typeSpeed:200,loop:!0,backSpeed:100,showCursor:!1})
   </script>
  </body>

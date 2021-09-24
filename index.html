@@ -18,24 +18,11 @@
   <script src="./assets/typed.min.js"></script>
  </head>
  <body>
-  <div class="wrapper">
+ <div class="mainbox" style="position:relative">
+ 
+  <div class="wrapper" >
   
-  <div class="musicplayer">
-    <!-- require APlayer -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<meting-js
-        id="599703478"
-        lrc-type="0"
-        server="netease"
-        order="random"
-        type="playlist"
-        fixed="true"
-        list-olded="true">
-</meting-js>
-</div>
+
 
    <div class="boxavatar">
     <img class="avater" alt="Sora" src="https://cdn.jsdelivr.net/gh/SoraKasvgano/bg/images/noisky.jpg" />
@@ -76,9 +63,27 @@
   <script>
     var typed=new Typed("#description",{strings:[document.getElementById("description").innerHTML],startDelay:100,typeSpeed:200,loop:!0,backSpeed:100,showCursor:!1})
   </script>
+  
+    <div class="musicplayer">
+    <!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<meting-js
+        id="599703478"
+        lrc-type="0"
+        server="netease"
+        order="random"
+        type="playlist"
+        fixed="true"
+        list-olded="true">
+</meting-js>
+    </div>
+  
   </div>
 
-
+</div>
  </body>
  <!--感谢itjoker大兄弟的模板地址https://github.com/ITJoker233/homepage-->
 </html>
